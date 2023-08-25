@@ -1,3 +1,18 @@
 #! /usr/bin/env bash
 
-echo "Hello World"
+NUME2="Ion"
+
+declare -a nume
+nume=("Ion" "Sergiu" "George")
+
+for n in "${nume[@]}"; do
+  echo Hello World $n
+done
+
+# comment
+#if [[ ${#} -ge 1 ]]; then
+#  echo Hello World "${1}"
+#  echo Hello World "$NUME2"
+#else
+#  echo error
+#fi
